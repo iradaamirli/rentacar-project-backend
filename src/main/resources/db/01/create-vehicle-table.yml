@@ -1,0 +1,54 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: irada
+      changes:
+        - createTable:
+            tableName: travel_packages
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: brand
+                  type: VARCHAR(255)
+              - column:
+                  name: model
+                  type: VARCHAR(255)
+              - column:
+                  name: transmission
+                  type: VARCHAR(255)
+              - column:
+                  name: airConditioning
+                  type: BOOLEAN
+              - column:
+                  name: imageUrl
+                  type: VARCHAR(255)
+              - column:
+                  name: dailyPrice
+                  type: DOUBLE
+              - column:
+                  name: year
+                  type: BIGINT
+              - column:
+                  name: seats
+                  type: BIGINT
+              - column:
+                  name: doors
+                  type: BIGINT
+              - column:
+                  name: horsepower
+                  type: BIGINT
+              - column:
+                  name: luggage
+                  type: BIGINT
+              - column:
+                  name: stock
+                  type: BIGINT
+              - column:
+                  name: status
+                  type: VARCHAR(50)
+

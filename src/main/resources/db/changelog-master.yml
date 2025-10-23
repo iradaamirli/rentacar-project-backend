@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - include:
+      file: db/01/create-vehicle-table.yml
+  - include:
+      file: db/02/create-reservation-table.yml
+  - include:
+      file: db/03/create-payment-table.yml
